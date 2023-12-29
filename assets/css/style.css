@@ -15,7 +15,9 @@ h1 {
     text-align: center;
     font-family: 'Almendra', sans-serif;
     font-size: 40px;
-    padding
+    padding-top: 15px;
+    /* Create a shadow effect */
+    text-shadow: 0.5px 0.5px #ECF1E4, -2px -2px 8px #ECF1E4;
 }
 
 h2, h3 {
@@ -31,7 +33,6 @@ p {
 #back-cover {
     background-color: rgba(255, 255, 255, 0.4);
     padding: 25px 25px 40px;
-    margin-top: 50px;
     box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
@@ -66,4 +67,24 @@ input::placeholder {
 
 .btn-hover:hover {
     background-color: #B0C185;
+}
+
+/* Media query tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    #back-cover {
+        width: 350px;
+        height: 300px;
+    }
+
+    .btn-hover {
+        margin-top: 40px;
+    }
+
+    #name {
+        margin-top: 20px;
+    }
+
+    p {
+        margin-top: 25px;
+    }
 }
