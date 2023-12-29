@@ -1,2 +1,69 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Almendra:ital@1&family=Expletus+Sans:wght@400;500&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&family=Signika+Negative:wght@300&display=swap');
+
+/* Override default styles */
+body {
+    background: url(../images/bg-image.jpeg) no-repeat center center/cover;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Almendra', sans-serif;
+    font-size: 40px;
+    padding
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Username section */
+#back-cover {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 25px 25px 40px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+.btn-hover {
+    background-color: #96AD5C;
+    margin: 20px auto 0;
+    display: block;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100px;
+    border-width: 1px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+#name {
+    padding: 5px;
+    background: transparent;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.input-name {
+    text-align: center;
+}
+
+input::placeholder {
+    text-align: center;
+    color: #3D3E3D;
+    font-size: 15px;
+}
+
+.btn-hover:hover {
+    background-color: #B0C185;
+}
