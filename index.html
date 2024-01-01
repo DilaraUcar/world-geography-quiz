@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An interactive Geography questions Quiz.">
-    <meta name="keywords" content="Geography, Geography quiz, Online quiz, Test your knowledge, Geography Questions">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An interactive Geography questions Quiz."
+    />
+    <meta
+      name="keywords"
+      content="Geography, Geography quiz, Online quiz, Test your knowledge, Geography Questions"
+    />
+
+    <!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 
     <!-- Font Awseome  -->
-    <script src="https://kit.fontawesome.com/e410e4b347.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <script
+      src="https://kit.fontawesome.com/e410e4b347.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Geography Quiz</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1><i class="fa-solid fa-earth-americas"></i> WORLD GEOGRAPHY QUIZ
-        </h1>
+      <h1><i class="fa-solid fa-earth-americas"></i> WORLD GEOGRAPHY QUIZ</h1>
     </header>
     <!-- Start -->
-        <div id="start-container" class="input-name">
-            <h2>Test you knowledge!</h2>
-            <p>Please enter your name to continue:</p>
-            <form action="">
-                <label for="name"></label>
-                <input type="text" id="name" placeholder="Name" required><br>
-                <button type="button" class="btn-hover" onclick="startQuiz()">Next</button>
-            </form>
-        </div>
+    <div id="start-container" class="input-name">
+      <h2>Test you knowledge!</h2>
+      <p>Please enter your name to continue:</p>
+      <form action="">
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Name" required /><br />
+        <button type="button" class="btn-hover" onclick="startQuiz()">
+          Next
+        </button>
+      </form>
+    </div>
 
-        <!-- Quiz -->
-        <div id="quiz-container" style="display:none">
-            <div id="quiz-header">
-                <h3 id="question-number">Question 1 of 10</h3>
-                <h3 id="score">Score: 0</h3>
-            </div>
-            <hr>
-            <div id="question-container">
-                <h2 id="question"></h2>
-            </div>
-            <div id="options-container">
-                <!-- Options will be inserted here using JavaScript -->
-            </div>
-        </div>
+    <!-- Quiz -->
+    <div id="quiz-container" style="display: none">
+      <div id="quiz-header">
+        <h3 id="question-number">Question 1 of 10</h3>
+        <h3 id="score">Score: 0</h3>
+      </div>
+      <hr />
+      <div id="question-container">
+        <h2 id="question"></h2>
+      </div>
+      <div id="options-container">
+        <!-- Options will be inserted here using JavaScript -->
+      </div>
+    </div>
 
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
