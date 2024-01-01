@@ -57,12 +57,29 @@ let score = 0;
 
 function startQuiz() {
 
+    playerName = document.getElementById('name').value;
+
+    if (playerName === '') {
+        return;
+    }
+
+    document.getElementById('start-container').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    loadQuestion();
+
 }
 
 function loadQuestion() {
+    const questionNumberElement = document.getElementById('question-number');
+    const scoreElement = document.getElementById('score');
+    const questionElement = document.getElementById('question');
+    const optionsContainer = document.getElementById('options-container');
+    const currentQuizData = quizData[currentQuestion];
 
-}
-
-function showResults() {
-
+    // Updates as the user goes through the questions
+    questionNumberElement.innerText = `Question ${currentQuestion + 1} out of 10`;
+    scoreElement.innerText = `Score: ${score}`;
+    questionElement.innerText = currentQuizData.question;
+    optionsContainer.innerHTML = '';
 }
