@@ -95,8 +95,8 @@ function loadQuestion() {
 function selectAnswer(selectedIndex) {
     const currentQuizData = quizData[currentQuestion];
 
-    if (currentQuizData.options[selectedIndex] === currentQuizData.correctAnswer) {
-        score++;
+    if (selectedIndex === currentQuizData.correctAnswer) {
+        score += 10;
     }
 
     currentQuestion++;
@@ -110,8 +110,25 @@ function selectAnswer(selectedIndex) {
 
 function showResults() {
     const quizContainer = document.getElementById('quiz-container');
-    quizContainer.innerHTML = `
-    <h2>${playerName}, your Score: ${score} out of 10</h2>
-    <button onclick="location.reload()">Retry</button>
-  `;
+
+    const resultContainer = document.createElement('div');
+    resultContainer.classList.add('result-container');
+
+    const resultMessage = document.createElement('h2');
+    resultMessage.innerText = `${playerName}, you managed to answer ${score / 10} questions correctly with a score:`;
+
+    const totalScoreMessage = document.createElement('h2');
+    totalScoreMessage.innerHTML = `<i class="fa-solid fa-trophy" style="color: gold;"></i>${score}`;
+
+    resultContainer.appendChild(resultMessage);
+    resultContainer.appendChild(totalScoreMessage);
+
+    quizContainer.innerHTML = '';
+    quizContainer.appendChild(resultContainer);
+
+    const retryButton = document.createElement('button');
+    retryButton.innerText = 'Play Again';
+    retryButton.classList.add('retry-button');
+    retryButton.addEventListener('click', () => location.reload());
+    quizContainer.appendChild(retryButton);
 }

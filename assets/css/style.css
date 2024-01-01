@@ -45,7 +45,6 @@ p {
     padding: 10px 20px;
     border-radius: 5px;
     width: 100px;
-    border-width: 1px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -69,6 +68,23 @@ input::placeholder {
 .btn-hover:hover {
     background-color: #B0C185;
 }
+
+/* End game styles */
+.retry-button {
+    background-color: #96AD5C;
+    margin: 20px auto 0;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.retry-button:hover {
+    background-color: #B0C185;
+}
+    
 
 /* Media query tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
