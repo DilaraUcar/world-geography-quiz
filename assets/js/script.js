@@ -55,6 +55,13 @@ let playerName = '';
 let currentQuestion = 0;
 let score = 0;
 
+document.addEventListener('DOMContentLoaded', function () {
+    // This code will run when the DOM is fully loaded
+
+    // Focus on the name input
+    document.getElementById('name').focus();
+});
+
 function startQuiz() {
 
     playerName = document.getElementById('name').value;
@@ -78,7 +85,7 @@ function loadQuestion() {
     const currentQuizData = quizData[currentQuestion];
 
     // Updates as the user goes through the questions
-    questionNumberElement.innerText = `Question ${currentQuestion + 1} out of 10`;
+    questionNumberElement.innerText = `Question ${currentQuestion + 1} / 10`;
     scoreElement.innerText = `Score: ${score}`;
     questionElement.innerText = currentQuizData.question;
     optionsContainer.innerHTML = '';

@@ -15,12 +15,13 @@ h1 {
     text-align: center;
     font-family: 'Almendra', sans-serif;
     font-size: 40px;
-    padding-top: 15px;
+    margin-bottom: 60px;
     /* Create a shadow effect */
     text-shadow: 0.5px 0.5px #ECF1E4, -2px -2px 8px #ECF1E4;
 }
 
-h2, h3 {
+h2,
+h3 {
     text-align: center;
 }
 
@@ -31,12 +32,15 @@ p {
 
 /* Start */
 /* Start & Quiz container styles */
-#start-container, #quiz-container {
+#start-container,
+#quiz-container {
     background-color: rgba(255, 255, 255, 0.4);
     padding: 25px 25px 40px;
     box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
+    width: 75%;
 }
+
 .btn-hover {
     background-color: #96AD5C;
     margin: 20px auto 0;
@@ -46,6 +50,7 @@ p {
     border-radius: 5px;
     width: 100px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 #name {
@@ -69,6 +74,33 @@ input::placeholder {
     background-color: #B0C185;
 }
 
+/* Game styles */
+#options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-btn {
+    display: block;
+    background-color: #96AD5C;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.option-btn:hover {
+    background-color: #B0C185;
+}
+
+#quiz-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* End game styles */
 .retry-button {
     background-color: #96AD5C;
@@ -79,18 +111,19 @@ input::placeholder {
     width: 100px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .retry-button:hover {
     background-color: #B0C185;
 }
-    
+
 
 /* Media query tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-    #start-container {
-        width: 350px;
-        height: 300px;
+
+    h2 {
+        font-size: 2rem;
     }
 
     .btn-hover {
@@ -105,3 +138,11 @@ input::placeholder {
         margin-top: 25px;
     }
 }
+
+/* Media query laptops and larger (1024px and up) */
+@media screen and (min-width: 1024px) {
+
+    #start-container,
+    #quiz-container {
+        width: 60%;
+    }
