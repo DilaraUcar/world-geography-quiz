@@ -49,5 +49,20 @@ const quizData = [
         options: ['Mexico', 'Mexico City', 'Madrid', 'Texas'],
         correctAnswer: 'Mexico City'
     }
-    // Add more questions 
 ];
+
+let playerName = '';
+let currentQuestion = 0;
+let score = 0;
+
+function startQuiz() {
+
+}
+
+function loadQuestion() {
+
+}
+
+function showResults() {
+
+}
