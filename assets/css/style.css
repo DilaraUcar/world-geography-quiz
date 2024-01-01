@@ -29,8 +29,9 @@ p {
     font-size: 18px;
 }
 
-/* Username section */
-#back-cover {
+/* Start */
+/* Start & Quiz container styles */
+#start-container, #quiz-container {
     background-color: rgba(255, 255, 255, 0.4);
     padding: 25px 25px 40px;
     box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.4);
@@ -71,7 +72,7 @@ input::placeholder {
 
 /* Media query tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-    #back-cover {
+    #start-container {
         width: 350px;
         height: 300px;
     }

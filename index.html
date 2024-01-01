@@ -17,18 +17,30 @@
         <h1><i class="fa-solid fa-earth-americas"></i> WORLD GEOGRAPHY QUIZ
         </h1>
     </header>
-    <!-- Start Section -->
-    <section id="back-cover">
-        <div class="input-name">
+    <!-- Start -->
+        <div id="start-container" class="input-name">
             <h2>Test you knowledge!</h2>
             <p>Please enter your name to continue:</p>
             <form action="">
                 <label for="name"></label>
                 <input type="text" id="name" name="name" placeholder="Name" required><br>
-                <button type="submit" class="btn-hover">Next</button>
+                <button type="submit" class="btn-hover" onclick="startQuiz()">Next</button>
             </form>
         </div>
-    </section>
+
+        <!-- Quiz -->
+        <div id="quiz-container" style="display: none;">
+            <div id="quiz-header">
+                <h3 id="question-number">Question 1 of 10</h3>
+                <h3 id="score">Score: 0</h3>
+            </div>
+            <div id="question-container">
+                <h2 id="question"></h2>
+            </div>
+            <div id="options-container">
+                <!-- Options will be inserted here using JavaScript -->
+            </div>
+        </div>
 
     <script src="assets/js/script.js"></script>
 </body>
