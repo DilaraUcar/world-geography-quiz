@@ -90,6 +90,7 @@ input::placeholder {
     width: 200px;
     border-radius: 10px;
     font-size: 1rem;
+    opacity: 0.8;
 }
 
 .option-btn:hover {
@@ -136,6 +137,17 @@ input::placeholder {
 
     p {
         margin-top: 25px;
+    }
+
+    /* Game */
+    .option-btn {
+        width: 400px;
+    }
+
+    /* End game */
+    .retry-button {
+        font-size: 20px;
+        width: fit-content;
     }
 }
 
