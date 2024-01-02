@@ -51,9 +51,10 @@ p {
     padding: 10px 20px;
     border-radius: 5px;
     width: 100px;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     color: #000000;
+    border: 2px outset #3D3E3D
 }
 
 #name {
@@ -102,6 +103,8 @@ input {
     opacity: 0.8;
     cursor: pointer;
     color: #000000;
+    border: 2px outset #3D3E3D;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 .option-btn:hover {
@@ -121,10 +124,11 @@ input {
     padding: 10px;
     border-radius: 5px;
     width: 100px;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
     font-size: 1rem;
     cursor: pointer;
     color: #000000;
+    border: 2px outset #3D3E3D
 }
 
 .retry-button:hover {
