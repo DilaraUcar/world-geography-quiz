@@ -1,5 +1,7 @@
 # World Geography Quiz
 
+![Mockup](documentation/mockup.jpeg)
+
 Visit the deployed site: [World Geography Quiz](https://dilaraucar.github.io/world-geography-quiz/)
 
 ## CONTENTS
