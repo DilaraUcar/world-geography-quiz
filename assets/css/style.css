@@ -51,7 +51,6 @@ p {
     border-radius: 5px;
     width: 100px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
 }
 
 #name {
@@ -59,6 +58,7 @@ p {
     background: transparent;
     border-radius: 5px;
     width: 200px;
+    font-size: 16px;
 }
 
 .input-name {
@@ -87,7 +87,6 @@ input::placeholder {
     background-color: #96AD5C;
     padding: 10px;
     margin: 10px;
-    cursor: pointer;
     width: 200px;
     border-radius: 10px;
     font-size: 1rem;
@@ -112,7 +111,6 @@ input::placeholder {
     border-radius: 5px;
     width: 100px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
     font-size: 1rem;
 }
 
@@ -159,3 +157,16 @@ input::placeholder {
     #quiz-container {
         width: 60%;
     }
+    
+    .btn-hover {
+         cursor: pointer;
+    }
+
+    .option-btn {
+        cursor: pointer;
+    }
+
+    .retry-button {
+        cursor: pointer;
+    }
+}
