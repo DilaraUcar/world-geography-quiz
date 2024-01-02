@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Noto+Serif&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Noto+Serif&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&family=Rubik+Maps&display=swap');
 
 /* Override default styles */
 body {
@@ -13,8 +13,9 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Rubik Maps', sans-serif;
     font-size: 40px;
+    font-weight: 200;
     margin-bottom: 60px;
     /* Create a shadow effect */
     text-shadow: 0.5px 0.5px #ECF1E4, -2px -2px 8px #ECF1E4;
