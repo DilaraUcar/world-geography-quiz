@@ -1,6 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Noto+Serif&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&display=swap');
 /* Override default styles */
 body {
     background: url(../images/bg-image.jpeg) no-repeat center center/cover;
@@ -13,7 +12,7 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Almendra', sans-serif;
+    font-family: 'Cardo', sans-serif;
     font-size: 40px;
     margin-bottom: 60px;
     /* Create a shadow effect */
@@ -23,6 +22,8 @@ h1 {
 h2,
 h3 {
     text-align: center;
+    font-family: 'Noto Serif', sans-serif;
+
 }
 
 p {
