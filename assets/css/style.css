@@ -1,5 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Noto+Serif&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&display=swap');
+
 /* Override default styles */
 body {
     background: url(../images/bg-image.jpeg) no-repeat center center/cover;
@@ -51,6 +52,8 @@ p {
     border-radius: 5px;
     width: 100px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    color: #000000;
 }
 
 #name {
@@ -75,6 +78,12 @@ input::placeholder {
     background-color: #B0C185;
 }
 
+/* Safari-zoom override default zoom */
+
+input {
+    font-size: 16px;
+}
+
 /* Game styles */
 #options-container {
     display: flex;
@@ -91,6 +100,8 @@ input::placeholder {
     border-radius: 10px;
     font-size: 1rem;
     opacity: 0.8;
+    cursor: pointer;
+    color: #000000;
 }
 
 .option-btn:hover {
@@ -112,6 +123,8 @@ input::placeholder {
     width: 100px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
     font-size: 1rem;
+    cursor: pointer;
+    color: #000000;
 }
 
 .retry-button:hover {
@@ -157,16 +170,10 @@ input::placeholder {
     #quiz-container {
         width: 60%;
     }
-    
-    .btn-hover {
-         cursor: pointer;
-    }
 
-    .option-btn {
-        cursor: pointer;
-    }
+    .btn-hover {}
 
-    .retry-button {
-        cursor: pointer;
-    }
+    .option-btn {}
+
+    .retry-button {}
 }
