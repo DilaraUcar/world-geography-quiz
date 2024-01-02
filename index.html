@@ -28,7 +28,7 @@
   </head>
   <body>
     <header>
-      <h1><i class="fa-solid fa-earth-americas"></i> WORLD GEOGRAPHY QUIZ</h1>
+        <h1><i class="fa-solid fa-earth-americas"></i> WORLD GEOGRAPHY QUIZ</h1>
     </header>
     <!-- Start -->
     <div id="start-container" class="input-name">
@@ -36,7 +36,8 @@
       <p>Please enter your name to continue:</p>
       <form action="">
         <label for="name"></label>
-        <input type="text" id="name" placeholder="Name" required /><br />
+        <input type="text" id="name" placeholder="Name" oninput="validateName()" required /><br />
+        <span id="name-error" style="color: red;"></span><br>
         <button type="button" class="btn-hover" onclick="startQuiz()">
           Next
         </button>

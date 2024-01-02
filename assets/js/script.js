@@ -62,13 +62,34 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('name').focus();
 });
 
+function validateName() {
+    const nameInput = document.getElementById('name');
+    const nameError = document.getElementById('name-error');
+
+    const trimmedValue = nameInput.value.trim();
+
+    if (trimmedValue === '') {
+        nameError.textContent = 'Please enter a valid name.';
+    } else {
+        nameError.textContent = '';
+    }
+}
+
 function startQuiz() {
 
-    playerName = document.getElementById('name').value;
+    const nameInput = document.getElementById('name');
+    const trimmedValue = nameInput.value.trim();
 
-    if (playerName === '') {
+    if (trimmedValue === '') {
+        // Display an error message next to the input field
+        document.getElementById('name-error').textContent = 'Please enter a valid name.';
         return;
     }
+
+    playerName = trimmedValue;
+
+    // Reset the error message if the input is valid
+    document.getElementById('name-error').textContent = '';
 
     document.getElementById('start-container').style.display = 'none';
     document.getElementById('quiz-container').style.display = 'block';
@@ -111,11 +132,11 @@ function selectAnswer(selectedIndex) {
     if (currentQuestion < quizData.length) {
         loadQuestion();
     } else {
-        showResults();
+        showResults(playerName);
     }
 }
 
-function showResults() {
+function showResults(playerName) {
     const quizContainer = document.getElementById('quiz-container');
 
     const resultContainer = document.createElement('div');
