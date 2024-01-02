@@ -15,10 +15,11 @@ h1 {
     text-align: center;
     font-family: 'Rubik Maps', sans-serif;
     font-size: 40px;
-    font-weight: 200;
+    font-weight: 100;
     margin-bottom: 60px;
     /* Create a shadow effect */
-    text-shadow: 0.5px 0.5px #ECF1E4, -2px -2px 8px #ECF1E4;
+    text-shadow: 0.5px 0.5px #B2BEB5,
+        -2px -2px 8px #B2BEB5;
 }
 
 h2,
