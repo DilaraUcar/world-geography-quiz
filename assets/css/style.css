@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Noto+Serif&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&family=Rubik+Maps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Noto+Serif&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&display=swap');
 
 /* Override default styles */
 body {
@@ -13,12 +13,13 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Rubik Maps', sans-serif;
+    font-family: 'ADLaM Display', sans-serif;
     font-size: 40px;
     font-weight: 100;
     margin-bottom: 60px;
     /* Create a shadow effect */
-    text-shadow: 0.9px 0.7px #6e6e6e, -1px -2px 5px #000;
+    text-shadow: 0.9px 0.7px #6e6e6e,
+        -1px -2px 3px #fff;
 }
 
 h2,
