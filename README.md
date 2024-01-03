@@ -31,12 +31,14 @@ Visit the deployed site: [World Geography Quiz](https://dilaraucar.github.io/wor
 ## Testing
 
 ### Validator Testing
+
 HTML
 
 One error and one warning where returned when passing through the official [WC3 validator.](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdilaraucar.github.io%2Fworld-geography-quiz%2F)
 
-* The error was fixed by removing the action="" from the form element.
-- The warning was fixed by putting in placeholder content of: Loading question...
+- The error was fixed by removing the action="" from the form element.
+
+* The warning was fixed by putting in placeholder content of: Loading question...
 
 ![html error](documentation/html-validate.jpeg)
 
@@ -44,12 +46,14 @@ CSS
 ![css validator](documentation/css-validate.jpeg)
 
 JavaScript
-* The unused variables where used in Html.
+
+- The unused variables where used in Html.
 
 ![javascrript valid](documentation/js-valid.jpeg)
 
 Lighthouse Score
 ![javascrript valid](documentation/)
+
 ## Fixed Bugs
 
 Had some problem with the start page on the input name field. The website remained in zoom when using it on iphone safari browser. To fix this i used font-size property on input field. Code taken from this [source.](https://defensivecss.dev/tip/input-zoom-safari/#:~:text=When%20focusing%20an%20input%20in,size%3A%2016px%20to%20the%20input)
@@ -57,6 +61,7 @@ Had some problem with the start page on the input name field. The website remain
 ![Safari Bug fix](documentation/safari-bug.jpeg)
 
 ## Deployment
+
 The site was deployed to GitHub pages following these steps:
 
 1. Go to [World-Geography-Quiz Repository.](https://github.com/DilaraUcar/world-geography-quiz)
@@ -72,10 +77,23 @@ The live link can be viewed here: <https://dilaraucar.github.io/world-geography-
 
 ### Code used
 
+- The focus on input field when website is first visited was inspired by the code used from the CodeInstitute learning project - Love Maths.
+![focus input field code](documentation/focus-input.jpeg)
+
+- Using the trim() to make sure the user must put in a name before continuing was recommended by my mentor Spencer Barriball. I then used google to understand the concept more and how to use it.
+![code making sure name must be input](documentation/trim-code.jpeg)
+- For bug fix when website is used on Safari browser making sure the input field works correctly and as intended code was used from this [source](https://defensivecss.dev/tip/input-zoom-safari/#:~:text=When%20focusing%20an%20input%20in,size%3A%2016px%20to%20the%20input) in CSS.
+
+![code for Safari users](documentation/safari-bug.jpeg)
+
+
+
 ### Content
-The web site code is my own, but I used *Google* to find information and *ChatGPT* to help with generating random ideas for questions and answers options to make the quiz more exciting but still being challanging for the user.
+
+The web site code is my own, but I used _Google_ to find information and _ChatGPT_ to help with generating random ideas for questions and answers options to make the quiz more exciting but still being challanging for the user.
 
 ### Media
+
 - [Fontjoy](https://fontjoy.com/) were used to generate font pairings that look good together.
 - [Favicon.io](https://favicon.io/favicon-generator/) were used to generate a favicon.
 - [Pexels](https://www.pexels.com/sv-se/) were used for image used.
