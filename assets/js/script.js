@@ -62,6 +62,12 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('name').focus();
 });
 
+/**
+ * This function validates the entered name 
+ * to ensure it's not empty. It shows an error message if not.
+ * If a username is provided it saves it so it can be displayed at the end.
+ * This function is used in html.
+ */
 function validateName() {
     const nameInput = document.getElementById('name');
     const nameError = document.getElementById('name-error');
@@ -75,6 +81,13 @@ function validateName() {
     }
 }
 
+
+/**
+ * This function starts the quiz by 
+ * capturing the player's name, validating it, 
+ * and initializing the quiz.
+ * This function is used in html.
+ */
 function startQuiz() {
 
     const nameInput = document.getElementById('name');
@@ -98,6 +111,11 @@ function startQuiz() {
 
 }
 
+
+/**
+ * Loads the current question, 
+ * updates the question number, score, and options.
+ */
 function loadQuestion() {
     const questionNumberElement = document.getElementById('question-number');
     const scoreElement = document.getElementById('score');
@@ -120,6 +138,12 @@ function loadQuestion() {
     });
 }
 
+
+/**
+ * Handles the selection of an answer, updates the score,
+ *  and continues to the next question.
+ * @param {number} selectedIndex - The index of the selected answer.
+ */
 function selectAnswer(selectedIndex) {
     const currentQuizData = quizData[currentQuestion];
 
@@ -136,6 +160,13 @@ function selectAnswer(selectedIndex) {
     }
 }
 
+
+/**
+ * Displays the final quiz results, showing the player's name, 
+ * the number of correct answers,
+ * and a score message with a "Play Again" button.
+ * @param {string} playerName - The name of the player.
+ */
 function showResults(playerName) {
     const quizContainer = document.getElementById('quiz-container');
 
