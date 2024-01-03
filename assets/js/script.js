@@ -15,7 +15,7 @@ const quizData = [
         correctAnswer: 3
     },
     {
-        question: 'What is the name of the larges Country in the world?',
+        question: 'What is the name of the largest Country in the world?',
         options: ['China', 'Russia', 'United States', 'Canada'],
         correctAnswer: 1
     },
