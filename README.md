@@ -4,9 +4,9 @@
 
 Visit the deployed site: [World Geography Quiz](https://dilaraucar.github.io/world-geography-quiz/)
 
-## CONTENTS
-
 ---
+
+## CONTENTS
 
 - [World Geography Quiz](#world-geography-quiz)
   - [CONTENTS](#contents)
@@ -22,9 +22,30 @@ Visit the deployed site: [World Geography Quiz](https://dilaraucar.github.io/wor
     - [Content](#content)
     - [Media](#media)
 
+---
+
+## Introduction
+
+The World Geography Quiz is a multiple choice online quiz testing the users knowledge on different countries and there geographic. The user can put in there name in the beginning of the quiz. The user gets feedback on the number of questions and the score in the ongoing quiz. The user gets an overall feedback at the end of the quiz showing how they did in the quiz, how many questions they got right, there score and a button that is there if the user wants to try again.
+
+
+### Purpose and Target Audiance
+The purpose of the World Geography Quiz is for users who wants to play an online quiz about geography to test there knowledge.
+The target audience is users who has an interest in Geography and want entertaining way to test and learn about geography online. 
+
+---
+
 ## Features
 
-### Landing Page
+### Start Section
+
+- Features an input field. The user is required to enter a name to continue. A submit button initiates the next section if a valid name has been entered. If user tries to continue without putting in a valid name a red text pops up as "Please enter a valid name."
+  
+![start quiz photo](documentation/start.jpeg)
+
+### Quiz Section
+
+![Quiz photo](documentation/quiz.jpeg)
 
 ### Features Left to Implement
 
@@ -42,14 +63,18 @@ One error and one warning where returned when passing through the official [WC3 
 
 ![html error](documentation/html-validate.jpeg)
 
+
 CSS
+
 ![css validator](documentation/css-validate.jpeg)
+
 
 JavaScript
 
 - The unused variables where used in Html.
 
 ![javascrript valid](documentation/js-valid.jpeg)
+
 
 Lighthouse Score
 ![javascrript valid](documentation/)
