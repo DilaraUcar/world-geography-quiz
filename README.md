@@ -46,7 +46,7 @@ The target audience is users who has an interest in Geography and want entertain
 
 - Features an input field. The user is required to enter a name to continue. A submit button initiates the next section if a valid name has been entered. If user tries to continue without putting in a valid name a red text pops up as "Please enter a valid name."
 
-![start quiz photo](documentation/start.jpeg)
+![Start section](documentation/start.jpeg)
 
 ### Quiz Section
 
