@@ -14,9 +14,23 @@
     />
 
     <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
 
     <!-- Font Awseome  -->
     <script
@@ -28,16 +42,22 @@
   </head>
   <body>
     <header>
-        <h1><i class="fa-solid fa-earth-americas"></i> WORLD GEOGRAPHY QUIZ</h1>
+      <h1><i class="fa-solid fa-earth-americas"></i> WORLD GEOGRAPHY QUIZ</h1>
     </header>
     <!-- Start -->
     <div id="start-container" class="input-name">
       <h2>Test you knowledge!</h2>
       <p>Please enter your name to continue:</p>
-      <form action="">
+      <form>
         <label for="name"></label>
-        <input type="text" id="name" placeholder="Name" oninput="validateName()" required /><br />
-        <span id="name-error" style="color: red;"></span><br>
+        <input
+          type="text"
+          id="name"
+          placeholder="Name"
+          oninput="validateName()"
+          required
+        /><br />
+        <span id="name-error" style="color: red"></span><br />
         <button type="button" class="btn-hover" onclick="startQuiz()">
           Next
         </button>
@@ -52,7 +72,7 @@
       </div>
       <hr />
       <div id="question-container">
-        <h2 id="question"></h2>
+        <h2 id="question">Loading question...</h2>
       </div>
       <div id="options-container">
         <!-- Options will be inserted here using JavaScript -->
