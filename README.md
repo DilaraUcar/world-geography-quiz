@@ -21,6 +21,7 @@ Visit the deployed site: [World Geography Quiz](https://dilaraucar.github.io/wor
     - [Validator Testing](#validator-testing)
   - [Fixed Bugs](#fixed-bugs)
   - [Deployment](#deployment)
+    - [Git Commands](#git-commands)
   - [Credits](#credits)
     - [Code used](#code-used)
     - [Content](#content)
@@ -109,6 +110,7 @@ JavaScript
 ![javascript valid](documentation/js-valid.jpeg)
 
 Lighthouse Score
+
 ![lighthouse score](documentation/lighthouse.png)
 
 ---
@@ -133,6 +135,12 @@ The site was deployed to GitHub pages following these steps:
 6. once the steps are done go back to book club repository and refresh page and you'll see deployed page at the right side if you scroll down.
 
 The live link can be viewed here: <https://dilaraucar.github.io/world-geography-quiz/>
+
+### Git Commands
+
+- Git add was used to add the changes made for the next commit.
+- Git commit was used to save those changes to the repository with meaningful messages. A commit acts as a snapshot of changes.
+- Git push was then used to update the remote repository with local commits.
 
 ---
 
